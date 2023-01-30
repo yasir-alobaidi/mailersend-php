@@ -1,9 +1,9 @@
 {
-  "name": "mailersend/mailersend",
+  "name": "mailersend/mailersend2.0",
   "description": "MailerSend PHP SDK",
   "type": "library",
   "license": "MIT",
-  "homepage": "https://github.com/mailersend/mailersend-php",
+  "homepage": "https://github.com/yasir-alobaidi/mailersend-php",
   "keywords": [
     "MailerSend",
     "mailersend",
