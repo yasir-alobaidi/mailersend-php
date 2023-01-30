@@ -137,7 +137,7 @@ composer require php-http/guzzle7-adapter nyholm/psr7
 After that you can install the SDK.
 
 ```bash
-composer require mailersend/mailersend
+composer require mailersend2.0/mailersend2.0
 ```
 
 <a name="usage"></a>
