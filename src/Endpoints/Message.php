@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Message extends AbstractEndpoint
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Helpers\Builder;
+namespace ModishMailerSend\Helpers\Builder;
 
 use Tightenco\Collect\Contracts\Support\Arrayable;
 use Tightenco\Collect\Support\Arr;

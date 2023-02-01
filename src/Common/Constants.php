@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Common;
+namespace ModishMailerSend\Common;
 
 class Constants
 {

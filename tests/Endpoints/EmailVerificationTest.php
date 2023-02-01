@@ -1,13 +1,13 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\EmailVerification;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\EmailVerificationParams;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\EmailVerification;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\EmailVerificationParams;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Tightenco\Collect\Support\Arr;
 
@@ -32,7 +32,7 @@ class EmailVerificationTest extends TestCase
      * @dataProvider validGetAllDataProvider
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function test_get_all(array $payload, array $expected): void
     {

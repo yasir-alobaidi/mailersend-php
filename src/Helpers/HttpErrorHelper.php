@@ -1,12 +1,12 @@
 <?php
 
-namespace MailerSend\Helpers;
+namespace ModishMailerSend\Helpers;
 
 use Http\Client\Common\Plugin;
 use Http\Promise\Promise;
-use MailerSend\Exceptions\MailerSendHttpException;
-use MailerSend\Exceptions\MailerSendValidationException;
-use MailerSend\Exceptions\MailerSendRateLimitException;
+use ModishMailerSend\Exceptions\MailerSendHttpException;
+use ModishMailerSend\Exceptions\MailerSendValidationException;
+use ModishMailerSend\Exceptions\MailerSendRateLimitException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

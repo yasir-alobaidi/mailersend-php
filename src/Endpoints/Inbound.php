@@ -1,11 +1,11 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\Inbound as InboundBuilder;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\Inbound as InboundBuilder;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Inbound extends AbstractEndpoint
 {
@@ -14,7 +14,7 @@ class Inbound extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function getAll(?string $domainId = null, ?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
     {
@@ -41,7 +41,7 @@ class Inbound extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function find(string $inboundId): array
     {
@@ -81,7 +81,7 @@ class Inbound extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function delete(string $inboundId): array
     {

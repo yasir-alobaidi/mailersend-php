@@ -1,11 +1,11 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\EmailVerificationParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\EmailVerificationParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class EmailVerification extends AbstractEndpoint
 {
@@ -13,7 +13,7 @@ class EmailVerification extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function getAll(?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
@@ -39,7 +39,7 @@ class EmailVerification extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function find(string $emailVerificationId): array
@@ -56,7 +56,7 @@ class EmailVerification extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function create(EmailVerificationParams $params): array
     {
@@ -72,7 +72,7 @@ class EmailVerification extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function verify(string $emailVerificationId): array
@@ -88,7 +88,7 @@ class EmailVerification extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function getResults(
@@ -119,7 +119,7 @@ class EmailVerification extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function verifyEmail(string $email): array
     {

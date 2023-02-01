@@ -1,43 +1,43 @@
 <?php
 
-namespace MailerSend;
+namespace ModishMailerSend;
 
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Activity;
-use MailerSend\Endpoints\Analytics;
-use MailerSend\Endpoints\Blocklist;
-use MailerSend\Endpoints\BulkEmail;
-use MailerSend\Endpoints\Domain;
-use MailerSend\Endpoints\Email;
-use MailerSend\Endpoints\EmailVerification;
-use MailerSend\Endpoints\HardBounce;
-use MailerSend\Endpoints\Inbound;
-use MailerSend\Endpoints\Message;
-use MailerSend\Endpoints\ScheduleMessages;
-use MailerSend\Endpoints\SenderIdentity;
-use MailerSend\Endpoints\Sms;
-use MailerSend\Endpoints\SmsActivity;
-use MailerSend\Endpoints\SmsInbound;
-use MailerSend\Endpoints\SmsMessage;
-use MailerSend\Endpoints\SmsNumber;
-use MailerSend\Endpoints\SmsRecipient;
-use MailerSend\Endpoints\SmsWebhook;
-use MailerSend\Endpoints\Template;
-use MailerSend\Endpoints\SpamComplaint;
-use MailerSend\Endpoints\Unsubscribe;
-use MailerSend\Endpoints\Webhook;
-use MailerSend\Endpoints\Token;
-use MailerSend\Endpoints\Recipient;
-use MailerSend\Exceptions\MailerSendException;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Activity;
+use ModishMailerSend\Endpoints\Analytics;
+use ModishMailerSend\Endpoints\Blocklist;
+use ModishMailerSend\Endpoints\BulkEmail;
+use ModishMailerSend\Endpoints\Domain;
+use ModishMailerSend\Endpoints\Email;
+use ModishMailerSend\Endpoints\EmailVerification;
+use ModishMailerSend\Endpoints\HardBounce;
+use ModishMailerSend\Endpoints\Inbound;
+use ModishMailerSend\Endpoints\Message;
+use ModishMailerSend\Endpoints\ScheduleMessages;
+use ModishMailerSend\Endpoints\SenderIdentity;
+use ModishMailerSend\Endpoints\Sms;
+use ModishMailerSend\Endpoints\SmsActivity;
+use ModishMailerSend\Endpoints\SmsInbound;
+use ModishMailerSend\Endpoints\SmsMessage;
+use ModishMailerSend\Endpoints\SmsNumber;
+use ModishMailerSend\Endpoints\SmsRecipient;
+use ModishMailerSend\Endpoints\SmsWebhook;
+use ModishMailerSend\Endpoints\Template;
+use ModishMailerSend\Endpoints\SpamComplaint;
+use ModishMailerSend\Endpoints\Unsubscribe;
+use ModishMailerSend\Endpoints\Webhook;
+use ModishMailerSend\Endpoints\Token;
+use ModishMailerSend\Endpoints\Recipient;
+use ModishMailerSend\Exceptions\MailerSendException;
 use Tightenco\Collect\Support\Arr;
 
 /**
- * This is the PHP SDK for MailerSend
+ * This is the PHP SDK for ModishMailerSend
  *
- * Class MailerSend
- * @package MailerSend
+ * Class ModishMailerSend
+ * @package ModishMailerSend
  */
-class MailerSend
+class ModishMailerSend
 {
     protected array $options;
     protected static array $defaultOptions = [

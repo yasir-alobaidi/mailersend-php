@@ -1,9 +1,9 @@
 <?php
 
-namespace MailerSend\Tests\Helpers;
+namespace ModishMailerSend\Tests\Helpers;
 
-use MailerSend\Helpers\BuildUri;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Helpers\BuildUri;
+use ModishMailerSend\Tests\TestCase;
 
 class BuildUriTest extends TestCase
 {

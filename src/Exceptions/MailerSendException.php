@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Exceptions;
+namespace ModishMailerSend\Exceptions;
 
 class MailerSendException extends \ErrorException
 {

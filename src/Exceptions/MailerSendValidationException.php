@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Exceptions;
+namespace ModishMailerSend\Exceptions;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

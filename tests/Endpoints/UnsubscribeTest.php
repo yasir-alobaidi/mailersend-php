@@ -1,14 +1,14 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\Constants;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Unsubscribe;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\SuppressionParams;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Unsubscribe;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\SuppressionParams;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Tightenco\Collect\Support\Arr;
 

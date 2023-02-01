@@ -1,15 +1,15 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Sms;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Exceptions\MailerSendValidationException;
-use MailerSend\Helpers\Builder\SmsParams;
-use MailerSend\Helpers\Builder\SmsPersonalization;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Sms;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Exceptions\MailerSendValidationException;
+use ModishMailerSend\Helpers\Builder\SmsParams;
+use ModishMailerSend\Helpers\Builder\SmsPersonalization;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 use Tightenco\Collect\Support\Arr;

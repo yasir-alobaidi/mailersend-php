@@ -1,11 +1,11 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\ActivityParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\ActivityParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Activity extends AbstractEndpoint
 {
@@ -13,7 +13,7 @@ class Activity extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function getAll(string $domainId, ActivityParams $activityParams): array

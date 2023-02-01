@@ -1,11 +1,11 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Message;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Message;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Tightenco\Collect\Support\Arr;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Helpers;
+namespace ModishMailerSend\Helpers;
 
 class BuildUri
 {

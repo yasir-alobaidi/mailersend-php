@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class ScheduleMessages extends AbstractEndpoint
 {
@@ -13,7 +13,7 @@ class ScheduleMessages extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function getAll(?string $domainId = null, ?string $status = null, ?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
     {
@@ -50,7 +50,7 @@ class ScheduleMessages extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function find(string $messageId): array
@@ -66,7 +66,7 @@ class ScheduleMessages extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function delete(string $messageId): array

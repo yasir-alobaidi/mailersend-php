@@ -1,11 +1,11 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\BlocklistParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\BlocklistParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Blocklist extends AbstractEndpoint
 {
@@ -13,7 +13,7 @@ class Blocklist extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function getAll(?string $domainId = null, ?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
@@ -40,7 +40,7 @@ class Blocklist extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function create(BlocklistParams $params): array
@@ -61,7 +61,7 @@ class Blocklist extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function delete(?array $ids = null, bool $all = false, ?string $domainId = null): array

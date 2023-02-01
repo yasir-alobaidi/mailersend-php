@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Template extends AbstractEndpoint
 {
@@ -12,7 +12,7 @@ class Template extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function getAll(?string $domainId = null, ?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
@@ -40,7 +40,7 @@ class Template extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function find(string $templateId): array
     {
@@ -56,7 +56,7 @@ class Template extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function delete(string $templateId): array
     {

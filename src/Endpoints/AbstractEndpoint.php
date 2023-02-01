@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
-use MailerSend\Common\HttpLayer;
-use MailerSend\Helpers\BuildUri;
-use MailerSend\Helpers\Url;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Helpers\BuildUri;
+use ModishMailerSend\Helpers\Url;
 
 abstract class AbstractEndpoint
 {

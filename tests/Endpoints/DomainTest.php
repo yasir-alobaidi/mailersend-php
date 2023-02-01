@@ -1,14 +1,14 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Domain;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\DomainParams;
-use MailerSend\Helpers\Builder\DomainSettingsParams;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Domain;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\DomainParams;
+use ModishMailerSend\Helpers\Builder\DomainSettingsParams;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Tightenco\Collect\Support\Arr;
 

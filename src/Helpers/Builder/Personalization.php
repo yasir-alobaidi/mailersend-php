@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Helpers\Builder;
+namespace ModishMailerSend\Helpers\Builder;
 
 use Assert\Assertion;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\GeneralHelpers;
 use Tightenco\Collect\Contracts\Support\Arrayable;
 
 class Personalization implements Arrayable, \JsonSerializable

@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Tests;
+namespace ModishMailerSend\Tests;
 
-use MailerSend\Endpoints\Email;
-use MailerSend\Exceptions\MailerSendException;
-use MailerSend\MailerSend;
+use ModishMailerSend\Endpoints\Email;
+use ModishMailerSend\Exceptions\MailerSendException;
+use ModishMailerSend\ModishMailerSend;
 
 class MailerSendTest extends TestCase
 {
@@ -12,12 +12,12 @@ class MailerSendTest extends TestCase
     {
         $this->expectException(MailerSendException::class);
 
-        new MailerSend();
+        new ModishMailerSend();
     }
 
     public function test_should_have_email_endpoint_set(): void
     {
-        $sdk = new MailerSend([
+        $sdk = new ModishMailerSend([
             'api_key' => 'test'
         ]);
 

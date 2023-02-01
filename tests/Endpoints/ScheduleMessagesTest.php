@@ -1,13 +1,13 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\Constants;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\ScheduleMessages;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\ScheduleMessages;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Tightenco\Collect\Support\Arr;
 
@@ -32,7 +32,7 @@ class ScheduleMessagesTest extends TestCase
      * @dataProvider validGetAllDataProvider
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function test_get_all(array $params, array $expected): void
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Helpers\Builder;
+namespace ModishMailerSend\Helpers\Builder;
 
 class SuppressionParams
 {

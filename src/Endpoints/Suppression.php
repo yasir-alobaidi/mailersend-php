@@ -1,12 +1,12 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Helpers\Builder\SuppressionParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Helpers\Builder\SuppressionParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Suppression extends AbstractEndpoint
 {
@@ -21,7 +21,7 @@ class Suppression extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function getAll(?string $domainId = null, ?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
     {
@@ -47,7 +47,7 @@ class Suppression extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function create(SuppressionParams $params): array
@@ -64,7 +64,7 @@ class Suppression extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function delete(?array $ids = null, bool $all = false, ?string $domainId = null): array

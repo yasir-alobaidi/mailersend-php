@@ -1,15 +1,15 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
-use MailerSend\Common\Constants;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\OpensAnalyticsParams;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\OpensAnalyticsParams;
+use ModishMailerSend\Tests\TestCase;
 use Http\Mock\Client;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Analytics;
-use MailerSend\Helpers\Builder\ActivityAnalyticsParams;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Analytics;
+use ModishMailerSend\Helpers\Builder\ActivityAnalyticsParams;
 use Psr\Http\Message\ResponseInterface;
 use Tightenco\Collect\Support\Arr;
 

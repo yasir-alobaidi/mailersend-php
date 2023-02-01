@@ -1,19 +1,19 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Email;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Exceptions\MailerSendRateLimitException;
-use MailerSend\Exceptions\MailerSendValidationException;
-use MailerSend\Helpers\Builder\Attachment;
-use MailerSend\Helpers\Builder\EmailParams;
-use MailerSend\Helpers\Builder\Personalization;
-use MailerSend\Helpers\Builder\Recipient;
-use MailerSend\Helpers\Builder\Variable;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Email;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Exceptions\MailerSendRateLimitException;
+use ModishMailerSend\Exceptions\MailerSendValidationException;
+use ModishMailerSend\Helpers\Builder\Attachment;
+use ModishMailerSend\Helpers\Builder\EmailParams;
+use ModishMailerSend\Helpers\Builder\Personalization;
+use ModishMailerSend\Helpers\Builder\Recipient;
+use ModishMailerSend\Helpers\Builder\Variable;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 use Tightenco\Collect\Support\Arr;

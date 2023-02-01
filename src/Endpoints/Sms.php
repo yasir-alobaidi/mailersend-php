@@ -1,16 +1,16 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Helpers\Builder\Attachment;
-use MailerSend\Helpers\Builder\EmailParams;
-use MailerSend\Helpers\Builder\Personalization;
-use MailerSend\Helpers\Builder\Recipient;
-use MailerSend\Helpers\Builder\SmsParams;
-use MailerSend\Helpers\Builder\SmsPersonalization;
-use MailerSend\Helpers\Builder\Variable;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Helpers\Builder\Attachment;
+use ModishMailerSend\Helpers\Builder\EmailParams;
+use ModishMailerSend\Helpers\Builder\Personalization;
+use ModishMailerSend\Helpers\Builder\Recipient;
+use ModishMailerSend\Helpers\Builder\SmsParams;
+use ModishMailerSend\Helpers\Builder\SmsPersonalization;
+use ModishMailerSend\Helpers\Builder\Variable;
+use ModishMailerSend\Helpers\GeneralHelpers;
 use Tightenco\Collect\Support\Collection;
 
 class Sms extends AbstractEndpoint
@@ -19,7 +19,7 @@ class Sms extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function send(SmsParams $params): array

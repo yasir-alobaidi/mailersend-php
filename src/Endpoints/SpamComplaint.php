@@ -1,8 +1,8 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
-use MailerSend\Common\HttpLayer;
+use ModishMailerSend\Common\HttpLayer;
 
 class SpamComplaint extends Suppression
 {

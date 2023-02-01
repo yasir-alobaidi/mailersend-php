@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Tests;
+namespace ModishMailerSend\Tests;
 
 use Http\Mock\Client;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace MailerSend\Tests\Helpers\Builder;
+namespace ModishMailerSend\Tests\Helpers\Builder;
 
-use MailerSend\Helpers\Builder\Attachment;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Helpers\Builder\Attachment;
+use ModishMailerSend\Tests\TestCase;
 use Tightenco\Collect\Support\Arr;
 
 class AttachmentTest extends TestCase

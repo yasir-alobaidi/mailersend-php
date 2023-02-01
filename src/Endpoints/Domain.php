@@ -1,12 +1,12 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\DomainParams;
-use MailerSend\Helpers\Builder\DomainSettingsParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\DomainParams;
+use ModishMailerSend\Helpers\Builder\DomainSettingsParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Domain extends AbstractEndpoint
 {
@@ -14,7 +14,7 @@ class Domain extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function getAll(?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT, ?bool $verified = null): array
@@ -42,7 +42,7 @@ class Domain extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function find(string $domainId): array
     {
@@ -58,7 +58,7 @@ class Domain extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function create(DomainParams $params): array
     {
@@ -75,7 +75,7 @@ class Domain extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function delete(string $domainId): array
     {
@@ -90,7 +90,7 @@ class Domain extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function recipients(string $domainId, ?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
@@ -121,7 +121,7 @@ class Domain extends AbstractEndpoint
     /**
      * @throws \JsonException
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function domainSettings(string $domainId, DomainSettingsParams $domainSettingsParams): array
     {
@@ -137,7 +137,7 @@ class Domain extends AbstractEndpoint
 
     /**
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function verify(string $domainId): array
@@ -154,7 +154,7 @@ class Domain extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function getDnsRecords(string $domainId): array
     {

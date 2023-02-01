@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Tests\Helpers\Builder;
+namespace ModishMailerSend\Tests\Helpers\Builder;
 
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\Recipient;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\Recipient;
+use ModishMailerSend\Tests\TestCase;
 use Tightenco\Collect\Support\Arr;
 
 class RecipientTest extends TestCase

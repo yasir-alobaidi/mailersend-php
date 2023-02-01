@@ -1,12 +1,12 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\ActivityAnalyticsParams;
-use MailerSend\Helpers\Builder\OpensAnalyticsParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\ActivityAnalyticsParams;
+use ModishMailerSend\Helpers\Builder\OpensAnalyticsParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Analytics extends AbstractEndpoint
 {
@@ -14,7 +14,7 @@ class Analytics extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     public function activityDataByDate(ActivityAnalyticsParams $activityAnalyticsParams): array
@@ -69,7 +69,7 @@ class Analytics extends AbstractEndpoint
 
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \JsonException
      */
     protected function callOpensEndpoint(string $path, OpensAnalyticsParams $opensAnalyticsParams): array

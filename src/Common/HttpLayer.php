@@ -1,6 +1,6 @@
 <?php
 
-namespace MailerSend\Common;
+namespace ModishMailerSend\Common;
 
 use Http\Client\Common\Plugin\AuthenticationPlugin;
 use Http\Client\Common\Plugin\ContentTypePlugin;
@@ -11,7 +11,7 @@ use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Discovery\Psr18ClientDiscovery;
 use Http\Message\Authentication\Bearer;
 use JsonException;
-use MailerSend\Helpers\HttpErrorHelper;
+use ModishMailerSend\Helpers\HttpErrorHelper;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;

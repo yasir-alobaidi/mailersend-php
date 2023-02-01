@@ -1,10 +1,10 @@
 <?php
 
-namespace MailerSend\Tests\Helpers\Builder;
+namespace ModishMailerSend\Tests\Helpers\Builder;
 
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\Variable;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\Variable;
+use ModishMailerSend\Tests\TestCase;
 use Tightenco\Collect\Support\Arr;
 
 class PersonalizationTest extends TestCase
@@ -25,7 +25,7 @@ class PersonalizationTest extends TestCase
 
     public function test_creates_personalization(): void
     {
-        $var = (new \MailerSend\Helpers\Builder\Personalization('test@mailersend.com', [
+        $var = (new \ModishMailerSend\Helpers\Builder\Personalization('test@mailersend.com', [
             [
                 'var' => 'variable',
                 'number' => 123,

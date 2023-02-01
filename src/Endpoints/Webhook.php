@@ -1,12 +1,12 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
 use JsonException;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\WebhookParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\WebhookParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 use Psr\Http\Client\ClientExceptionInterface;
 
 class Webhook extends AbstractEndpoint

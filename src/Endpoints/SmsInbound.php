@@ -1,11 +1,11 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\SmsInbound as SmsInboundBuilder;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\SmsInbound as SmsInboundBuilder;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class SmsInbound extends AbstractEndpoint
 {
@@ -14,7 +14,7 @@ class SmsInbound extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function getAll(?string $smsNumberId = null, ?bool $enabled = null, ?int $page = null, ?int $limit = Constants::DEFAULT_LIMIT): array
     {
@@ -42,7 +42,7 @@ class SmsInbound extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function find(string $smsInboundId): array
     {
@@ -92,7 +92,7 @@ class SmsInbound extends AbstractEndpoint
     /**
      * @throws \Psr\Http\Client\ClientExceptionInterface
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      */
     public function delete(string $smsInboundId): array
     {

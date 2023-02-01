@@ -1,18 +1,18 @@
 <?php
 
-namespace MailerSend\Tests\Endpoints;
+namespace ModishMailerSend\Tests\Endpoints;
 
 use Http\Mock\Client;
-use MailerSend\Common\Constants;
-use MailerSend\Common\HttpLayer;
-use MailerSend\Endpoints\Inbound;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\CatchFilter;
-use MailerSend\Helpers\Builder\Filter;
-use MailerSend\Helpers\Builder\Forward;
-use MailerSend\Helpers\Builder\Inbound as InboundBuilder;
-use MailerSend\Helpers\Builder\MatchFilter;
-use MailerSend\Tests\TestCase;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Common\HttpLayer;
+use ModishMailerSend\Endpoints\Inbound;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\CatchFilter;
+use ModishMailerSend\Helpers\Builder\Filter;
+use ModishMailerSend\Helpers\Builder\Forward;
+use ModishMailerSend\Helpers\Builder\Inbound as InboundBuilder;
+use ModishMailerSend\Helpers\Builder\MatchFilter;
+use ModishMailerSend\Tests\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Tightenco\Collect\Support\Arr;
 
@@ -36,7 +36,7 @@ class InboundTest extends TestCase
     /**
      * @dataProvider validInboundRoutingListDataProvider
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function test_get_all(array $params, array $expected): void

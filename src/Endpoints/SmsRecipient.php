@@ -1,11 +1,11 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Common\Constants;
-use MailerSend\Helpers\Builder\SmsRecipientParams;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Common\Constants;
+use ModishMailerSend\Helpers\Builder\SmsRecipientParams;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class SmsRecipient extends AbstractEndpoint
 {
@@ -19,7 +19,7 @@ class SmsRecipient extends AbstractEndpoint
      * @param SmsRecipientParams $smsRecipientParams
      * @return array
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function getAll(SmsRecipientParams $smsRecipientParams): array
@@ -66,7 +66,7 @@ class SmsRecipient extends AbstractEndpoint
      * @param string $status
      * @return array
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function update(string $smsRecipientId, string $status): array

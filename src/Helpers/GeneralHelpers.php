@@ -1,12 +1,12 @@
 <?php
 
-namespace MailerSend\Helpers;
+namespace ModishMailerSend\Helpers;
 
 use Assert\Assertion;
 use Assert\AssertionFailedException;
-use MailerSend\Exceptions\MailerSendAssertException;
-use MailerSend\Helpers\Builder\EmailParams;
-use MailerSend\Helpers\Builder\SmsParams;
+use ModishMailerSend\Exceptions\MailerSendAssertException;
+use ModishMailerSend\Helpers\Builder\EmailParams;
+use ModishMailerSend\Helpers\Builder\SmsParams;
 use Tightenco\Collect\Support\Collection;
 
 class GeneralHelpers

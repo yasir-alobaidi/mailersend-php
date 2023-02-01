@@ -1,9 +1,9 @@
 <?php
 
-namespace MailerSend\Endpoints;
+namespace ModishMailerSend\Endpoints;
 
 use Assert\Assertion;
-use MailerSend\Helpers\GeneralHelpers;
+use ModishMailerSend\Helpers\GeneralHelpers;
 
 class Recipient extends AbstractEndpoint
 {
@@ -20,7 +20,7 @@ class Recipient extends AbstractEndpoint
      * @param int|null $page
      * @return array
      * @throws \JsonException
-     * @throws \MailerSend\Exceptions\MailerSendAssertException
+     * @throws \ModishMailerSend\Exceptions\MailerSendAssertException
      * @throws \Psr\Http\Client\ClientExceptionInterface
      */
     public function get(?string $domainId, ?int $limit = self::DEFAULT_LIMIT, ?int $page = null): array

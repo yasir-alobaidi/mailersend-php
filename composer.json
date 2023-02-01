@@ -1,5 +1,5 @@
 {
-  "name": "yasir_mailer/yasir_mailer",
+  "name": "modishmailersend/modishmailersend",
   "description": "MailerSend PHP SDK",
   "type": "library",
   "license": "MIT",
@@ -42,12 +42,12 @@
   },
   "autoload": {
     "psr-4": {
-      "MailerSend\\": "src/"
+      "ModishMailerSend\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "MailerSend\\Tests\\": "tests/"
+      "ModishMailerSend\\Tests\\": "tests/"
     }
   },
   "scripts": {
