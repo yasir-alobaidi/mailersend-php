@@ -1,5 +1,5 @@
 {
-  "name": "modishsender/modishsender",
+  "name": "emailgateway/emailgateway",
   "description": "MailerSend PHP SDK",
   "type": "library",
   "license": "MIT",
